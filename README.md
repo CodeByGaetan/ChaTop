@@ -14,7 +14,12 @@ The Back-end uses :
 ![Static Badge](https://img.shields.io/badge/SpringDoc-2.2.0-green)
 
 > Spring Boot starter dependency :  
-> ![Static Badge](https://img.shields.io/badge/Web-grey) > ![Static Badge](https://img.shields.io/badge/Security-grey) > ![Static Badge](https://img.shields.io/badge/DataJPA-grey) > ![Static Badge](https://img.shields.io/badge/Lombok-grey) > ![Static Badge](https://img.shields.io/badge/OAuth2Client-grey) > ![Static Badge](https://img.shields.io/badge/MySQLDriver-grey)
+> ![Static Badge](https://img.shields.io/badge/Web-grey)
+> ![Static Badge](https://img.shields.io/badge/Security-grey)
+> ![Static Badge](https://img.shields.io/badge/DataJPA-grey)
+> ![Static Badge](https://img.shields.io/badge/Lombok-grey)
+> ![Static Badge](https://img.shields.io/badge/OAuth2Client-grey)
+> ![Static Badge](https://img.shields.io/badge/MySQLDriver-grey)
 
 ## Getting started
 
@@ -54,7 +59,7 @@ MySQL Database install :
 
 ### API Documentation
 
-JSON documentation : http://localhost:3001/api/v3/api-docs
+JSON documentation : http://localhost:3001/api/v3/api-docs  
 HTML documentation : http://localhost:3001/api/swagger-ui/index.html
 
 ### Mockoon env
