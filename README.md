@@ -1,22 +1,49 @@
-# ChaTop Api
+# ChaTop
 
-The API of the ChâTop Web App. Provide access and operations on the ChâTop application database.
+An application for managing vacation home reservations, offering users the ability to book accommodation or list their own property for rent.
 
-This project uses :
-- [JAVA] version 17
-- [Maven] (https://maven.apache.org/guides/index.html) version 4.0.0
-- [SpringBoot] (https://spring.io/projects/spring-boot) version 3.1.5 with Spring dependencies : Spring Web, Spring Security, Spring Data JPA, Lombok, OAuth2 Client and MySQL Driver
-- [JJWT] (https://github.com/jwtk/jjwt.git) version 0.11.5
-- [Springdoc] (https://github.com/springdoc/springdoc-openapi.git) version 2.2.0
+The Front-end uses :  
+![Static Badge](https://img.shields.io/badge/Angular-16.2.7-red)
+![Static Badge](https://img.shields.io/badge/StompJS-7.0.0-lightgreen)
 
-# API Documentation
+The Back-end uses :  
+![Static Badge](https://img.shields.io/badge/Java-17-orange)
+![Static Badge](https://img.shields.io/badge/Maven-4.0.0-purple)
+![Static Badge](https://img.shields.io/badge/Spring_Boot-3.1.5-green)
+![Static Badge](https://img.shields.io/badge/JJWT-0.11.5-red)
+![Static Badge](https://img.shields.io/badge/SpringDoc-2.2.0-red)
 
-JSON documentation : http://localhost:3001/api/v3/api-docs
-HTML documentation : http://localhost:3001/api/swagger-ui/index.html
+> Spring Boot starter dependency :  
+> ![Static Badge](https://img.shields.io/badge/Web-grey)
+> ![Static Badge](https://img.shields.io/badge/Security-grey)
+> ![Static Badge](https://img.shields.io/badge/DataJPA-grey)
+> ![Static Badge](https://img.shields.io/badge/Lombok-grey)
+> ![Static Badge](https://img.shields.io/badge/OAuth2Client-grey)
+> ![Static Badge](https://img.shields.io/badge/MySQLDriver-grey)
 
-# Install
+## Getting started
 
-Install all dependencies before starting : `npm install`.
+### Clone the project
+
+Clone the project in the directory of your choice :
+
+> git clone https://github.com/CodeByGaetan/ChaTop.git
+
+### Back-end
+
+- Open your IDE (VS Code, Eclipse, etc.) in the directory : `/ChaTop/ChaTopApi`
+- Run `mvn spring-boot:run` to launch the back-end in developpment mode
+- Or run `mvn package` to build the project and then run `java -jar target/chat-api-0.0.1-SNAPSHOT.jar` to launch the built package.
+
+### Front-end
+
+- Open your IDE (VS Code, Eclipse, etc.) in the directory : `/ChaTop/ChaTopWeb`
+- Run `npm install` to install the dependencies
+- Run `ng build` to build the project. The build artifacts will be stored in the `/ChatYCYW/chat-ui/dist/` directory.
+- Run `ng serve` to start the front-end development server
+- To use the app, navigate to http://localhost:4200/
+
+### Database
 
 MySQL Database install :
 - Install mySQL on the localhost and enable the service
@@ -27,11 +54,35 @@ MySQL Database install :
 - Run `CREATE USER 'TheUsername'@'%' IDENTIFIED BY 'ThePassword';` to create the MySQL user for the app. The username and password must be the same than in the application.properties file.
 - Run `GRANT ALL ON chatopdb.* to 'TheUsername'@'%';` to give ChâTop database access to the new user
 
-# Developpement run
+## Ressources
 
-Run the project from an IDE (Visual Studio Code or Eclipse) or use the command `mvn spring-boot:run`.
+### API Documentation
 
-# Build and Run the jar file
+JSON documentation : http://localhost:3001/api/v3/api-docs
+HTML documentation : http://localhost:3001/api/swagger-ui/index.html
 
-Run `mvn package` to build the project. The build artifact will be stored in the `target/` directory.
-Run `java -jar target/api-0.0.1-SNAPSHOT.jar` to launch the built package.
+### Mockoon env
+
+Download Mockoon here: https://mockoon.com/download/
+
+After installing you could load the environement
+
+> /ChaTop/ChaTopWeb/ressources/mockoon/rental-oc.json
+
+directly inside Mockoon 
+
+> File > Open environmement
+
+For launching the Mockoon server click on play bouton
+
+Mockoon documentation: https://mockoon.com/docs/latest/about/
+
+### Postman collection
+
+For Postman import the collection
+
+> /ChaTop/ChaTopWeb/ressources/postman/rental.postman_collection.json 
+
+by following the documentation: 
+
+https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-data-into-postman
